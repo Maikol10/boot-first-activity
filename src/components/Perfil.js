@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Perfil.css'
+import Contador from './Contador';
 
 
 function Perfil(props){
@@ -21,6 +22,20 @@ function Perfil(props){
                     <p className='resena-perfil'>
                         {props.resena}
                     </p>
+                </div>
+                <div className='button-content'>
+                    <button onClick={()=>window.open(props.linkedin, '_blank')}>
+                        Seguir en linkedin 
+                        <Contador/>
+                    </button>
+                    <button onClick={()=>window.open(props.youtube, '_blank')}>
+                        Seguir en Youtube
+                        <Contador/>
+                    </button>
+                    <button onClick={()=>window.open(props.instagram, '_blank')}>
+                        Seguir en Instagram
+                        <Contador/>
+                    </button>
                 </div>
             </div>
         </div>
